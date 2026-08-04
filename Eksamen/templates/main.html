@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Barnedåb</title>
+        <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Celina">
+        <meta name="description" content="Invitation til barnedåb">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+
+    <body>
+        <nav class="dropdown">
+            <span class="droptekst">Gå til ...</span>
+            <div class="dropdown_indhold">
+                <a href="#tidsplan">Dagens Forløb</a> <br>
+                <a href="#praktisk">Praktisk Info</a> <br>
+                <a href="#tilmelding">Meld venligst tilbage her</a> <br>
+                <a href="#gæsteliste">Gæsteliste</a> <br>
+                <a href="#fakta">Lidt om mig</a> <br>
+                <a href="#ønsker">Babys Ønsker</a> <br>
+                <a href="#galleri">Billedgalleri</a> <br>
+                <a href="#kontakt">Kontakt informationer</a>
+            </div>
+        </nav>
+
+        <header class="invi">
+            <h5>Invitation Til</h5>
+            <h1 class="barnedåb">Barnedåb</h1>
+            <p> Vi vil gerne, på vegne af Asger, invitere dig til dåb d. 05.09.2026. <Br> Dagen starter i Glenstrup Kirke, hvorefter Asgers farmor og farfar lægger hus til nogle hyggelige timers fejring af dåben. <Br> Her vil der blive serveret frokost. <Br> Vi glæder os til at se jer.</p>
+        </header>
+
+        <div class="fotos">
+            <img src="{{ url_for('static', filename='chok.JPEG') }}" alt="chok" width="100" height="190">
+            <img src="{{ url_for('static', filename='glæde.jpeg') }}" alt="glæde" width="100" height="190">
+            <img src="{{ url_for('static', filename='kram.jpeg') }}" alt="kram" width="100" height="190">
+            <img src="{{ url_for('static', filename='seriøs.jpeg') }}" alt="seriøs" width="100" height="190">
+            <img src="{{ url_for('static', filename='grin.jpeg') }}" alt="grin" width="100" height="190">
+            <p> Billedserie fra da Celina fortalte Jacob at han skal være far</p>
+        </div>
+
+        <section id="tidsplan" class="tidsplan">
+            <h2>Dagens Forløb</h2>
+            <p>10:30 Gudstjeneste med dåb</p>
+            <p>11:00 Billeder ved kirken</p>
+            <p>11:15 fejring af Asgers dåb</p>
+            <p></p>
+        </section>
+
+        <section id="praktisk" class="praktisk">
+            <h2>Praktisk Info</h2>
+            <h3>Tid</h3>
+            <p>Søndag d. 5. september 2026 kl. 10:30</p>
+
+            <div id="nedtælling" class="nedtælling"></div>
+            
+            <h3>Sted</h3>
+            <address>
+                Selve dåben finder sted her:<br>
+                <a class="kirken" href="https://www.google.com/maps/place/Glenstrup+S%C3%B8vej+36,+8990+F%C3%A5rup/@56.584194,9.8492769,438m/data=!3m2!1e3!4b1!4m6!3m5!1s0x464eab04dec81c5f:0x4a6d81dd66d8826c!8m2!3d56.5841911!4d9.8518518!16s%2Fg%2F11c1y9xv50?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank"> Glenstrup Søvej 36, 8990 Fårup</a>
+            </address>
+            <Br></Br>
+            <address>
+                Fejringen finder sted her:<br>
+                <a class="feststed" href="https://www.google.com/maps/place/S%C3%B8bjergvej+18,+9550+Mariager/@56.5862678,9.8775439,3a,75y,319.48h,92.1t/data=!3m7!1e1!3m5!1sZkeOTBylQiLqVFzPvEQnVg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-2.1030735285706754%26panoid%3DZkeOTBylQiLqVFzPvEQnVg%26yaw%3D319.48181890638796!7i16384!8i8192!4m15!1m8!3m7!1s0x464eaba5ebd2bd8f:0x7c0dc05d9a81dd0f!2sS%C3%B8bjergvej+18,+9550+Mariager!3b1!8m2!3d56.5864507!4d9.8775836!16s%2Fg%2F11c26tc8zm!3m5!1s0x464eaba5ebd2bd8f:0x7c0dc05d9a81dd0f!8m2!3d56.5864507!4d9.8775836!16s%2Fg%2F11c26tc8zm?entry=ttu&g_ep=EgoyMDI2MDcyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank"> Søbjergvej 18, 9550 Mariager </a>
+            </address>
+        
+            <h3>Parkering</h3>
+            <p>
+                Der er parkering ved kirken. <Br> <Br> Parkering ift. fejringen efter kirken: <Br> Følg "sporet" langs vandet, når du kommer til adressen. Kør langs vandet, til du er forbi hegnet af træer - parker på dette græsareal.
+            </p>
+
+        </section>
+  
+        <div class="tilmeld">
+            <section id="tilmelding" class="tilmelding">
+                <h2>Meld venligst tilbage her</h2>
+                <p><mark>Tilmelding skal ske senest d. 15. august 2026</mark></p>
+
+                <label for="navn">Vælg dit navn:</label>
+                <select name="navn" id="navn" required>
+                <option value="">Navn?</option>
+                </select>
+
+                <br><br>
+
+                <label for="status">Deltagelse:</label>
+                <select name="status" id="status" required>
+                <option value="Deltager">Deltager</option>
+                <option value="Deltager ikke">Deltager ikke</option>
+                <option value="Deltager kun ved dåb">Deltager kun ved dåb</option> 
+                <option value="Mangler svar">Mangler svar</option>
+                </select>
+
+                <br><br>
+
+                <button type="button" id="gem_svar">Gem mit svar</button>
+                <p id="svaret"></p>
+            </section>
+
+            <h2 class="gæster">Gæstelisten</h2>  
+
+            <section id="gæsteliste" class="gæsteliste"></section>
+        </div>
+
+        <table id="fakta" class="fakta">
+            <caption class="lidtommig">Lidt om mig</caption>
+            <thead>
+                <tr>
+                    <th>Fakta</th>
+                    <th>Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vægt ved fødsel</td>
+                    <td>3086 g</td>
+                </tr>
+                <tr>
+                    <td>Længde ved fødsel</td>
+                    <td>52 cm</td> </tr>
+                <tr>
+                    <td>Fødselsdag</td>
+                    <td>18. juli 2026</td>
+                </tr>
+                <tr>
+                    <td>Fødselstidspunkt</td>
+                    <td>kl. 22:30</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Yndlingsbeskæftigelser</td> 
+                    <td>Sove sødt og længe når vi har gæster</td>
+                </tr>
+                <tr>
+                    <td>Spise natten lang</td>
+                </tr>
+                <tr>
+                    <td>Sørge for at fars barsel foregår ved puslebordet</td>
+                </tr>
+                <tr>
+                    <td>Yndlingssang</td>
+                    <td>Lille Peter Edderkop</td>
+                </tr>
+                <tr>
+                    <td>Yndlingsbog</td>
+                    <td>Rasmus Klump</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <div class="uge20">
+            <img src="{{ url_for('static', filename='uge20.jpeg') }}" alt="uge20" width="260" height="190">
+            <p>Mors og fars første billede af mig</p>
+        </div>
+
+        <section id="ønsker" class="ønsker">
+            <h2>Asgers ønsker</h2>
+            <p>
+                <a class="ønsker_tryk" href="https://onskeskyen.dk/da/wishlists/OPhnrxMrnU8cfju9" target="_blank">Se babys ønsker her</a>
+            </p>
+        </section>
+
+        <section id="galleri" class="galleri">
+            <h2>Billedgalleri</h2>
+            <p>Vi ville blive meget glade, hvis du har lyst til at dele billeder og videoer <br> fra dåben, så vi kan gemme minderne om Asgers store dag. <br> Følg blot linket nedenfor og tilføj det du ønsker.</p>
+            <a class="galleri_tryk" href="/galleri" target="_blank">Gå til galleriet</a>
+        </section>
+
+        <footer id="kontakt" class="kontakt">
+            <h2>Kontakt informationer</h2>
+            <p>Ved spørgsmål eller lign. kan der rettes henvendelse til Celina på +45 51 88 22 80 eller Jacob på +45 29 41 08 82</p>
+            <address>
+                Tag kontakt til Celina her:
+                <a href="sms:+4551882280"> Skriv en sms til Celina</a> <Br>
+                Tag kontakt til Jacob her:
+                <a href="sms:+4529410882"> Skriv en sms til Jacob</a>
+            </address>
+        </footer>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    </body>
+</html>

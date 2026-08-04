@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Billedgalleri</title>
+        <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Celina">
+        <meta name="description" content="Billedgalleri">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='galleri.css') }}">
+    </head>
+
+    <body>
+        <header class="overskrift">
+            <h5>Tilføj dine billeder til</h5>
+            <h1 class="billedgalleri">Billedgalleriet</h1>
+            <p>Tak for at være klicket ind på billedgalleriet. Vi håber du har lyst til at dele dine billeder fra festen, med os</p>
+        </header>
+
+        <input class="input" type="file" id="fil_input" accept="image/*,video/*" multiple>
+            <br><br>
+            <button class="tilføj" type="button" id="upload_knap">Tilføj</button>
+            <p id="upload_billede"></p>
+
+        <div class="billede_galleri" id="billede_galleri"></div>
+
+        <script src="{{ url_for('static', filename='galleri.js') }}"></script>
+    </body>
+</html>
+
